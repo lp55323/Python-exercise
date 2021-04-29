@@ -25,7 +25,7 @@ if salary.isdigit() and int(salary) > 0:
                 cart_list.append(prod_list[int(order_list)])
                 print("You have order:", cart_list, "\n")
             elif salary < 0:
-                print("Your Money is not enough.")
+                print("Your Money is not enough. Please re-order again.")
                 break
 
         elif order_list == "q":
@@ -33,3 +33,5 @@ if salary.isdigit() and int(salary) > 0:
                 print("Have a nice shopping. You have bought: ", cart_list)
                 print("Your balance is: ", salary)
                 break
+        else:
+            break
